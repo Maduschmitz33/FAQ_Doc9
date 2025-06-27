@@ -2,17 +2,42 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>FAQ de Dúvidas - Parceiros Fixos DOC9</title>
+    <title>FAQ de Dúvidas - Parceiros DOC9</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: Arial, sans-serif;
             background: #f8f8f8;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+        }
+        .banner {
+            background: #ffc107;
+            color: #333;
+            text-align: center;
+            padding: 10px 5px;
+            font-weight: bold;
+        }
+        .navbar {
+            background: #0056b3;
+            padding: 15px;
+            position: fixed;
+            top: 40px;
+            width: 100%;
+            z-index: 999;
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
         .container {
             max-width: 900px;
-            margin: auto;
+            margin: 120px auto 20px;
             background: #fff;
             padding: 30px;
             border-radius: 10px;
@@ -26,7 +51,7 @@
             color: #0056b3;
             margin-top: 25px;
         }
-        p {
+        p, li {
             margin: 8px 0 15px;
             line-height: 1.6;
         }
@@ -41,65 +66,60 @@
             text-align: center;
             font-size: 0.85em;
             color: #777;
-            margin-top: 40px;
+            margin: 40px 0 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .btn {
+            padding: 12px 20px;
+            background: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .btn:hover {
+            background: #004494;
+        }
+        @media (max-width: 600px) {
+            .navbar a {
+                display: block;
+                margin: 10px 0;
+            }
+            .buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>❓ FAQ de Dúvidas - Parceiros Fixos DOC9</h1>
+
+    <div class="banner">📣 Novo treinamento disponível! <a href="#" style="text-decoration: underline; color: #333;">Clique aqui para acessar</a></div>
+
+    <div class="navbar">
+        <a href="#faq">FAQ</a>
+        <a href="#links">Links Úteis</a>
+        <a href="#tutoriais">Tutoriais</a>
+        <a href="#contato">Contato</a>
+    </div>
+
+    <div class="container" id="faq">
+        <h1>❓ FAQ de Dúvidas - Parceiros DOC9</h1>
 
         <h2>📌 Como faço para baixar o app DOC9?</h2>
-        <p>Você também poderá gerenciar suas solicitações pelo aplicativo. Baixe o app de acordo com seu dispositivo:</p>
+        <p>Baixe o app:</p>
         <ul>
-            <li><a href="#">Android: Clique aqui para baixar</a></li>
-            <li><a href="#">iPhone (iOS): Clique aqui para baixar</a></li>
-        </ul>
-        <p>Acesse o app usando o mesmo e-mail e senha do sistema web. Assim, tudo fica sincronizado automaticamente.</p>
-
-        <h2>📌 Como consulto minha pauta de audiências?</h2>
-        <p>No app Doc9, acesse a aba <strong>‘Solicitações’</strong> e <strong>‘Oportunidades’</strong>. Os clientes geralmente sobem pauta quinta e sexta-feira. Fique atento! Realizar os treinamentos completos aumenta suas chances de receber pautas.</p>
-
-        <h2>📌 O que é o lembrete de audiência?</h2>
-        <p>Com 48h de antecedência, você recebe um link via WhatsApp para confirmar sua presença, ou pode confirmar diretamente no sistema. Não confirmar no prazo conta como declínio e aplica multa contratual.</p>
-
-        <h2>📌 O que é o check-in das audiências?</h2>
-        <p>O check-in confirma sua presença e garante o bom andamento da audiência:</p>
-        <ul>
-            <li><strong>Presencial:</strong> pelo app, 40 minutos antes</li>
-            <li><strong>Telepresencial:</strong> pelo sistema ou app, 15 minutos antes</li>
-        </ul>
-        <p>Não realizar o check-in no tempo correto gera multa contratual de R$5,00.</p>
-
-        <h2>📌 Como realizar os treinamentos?</h2>
-        <p>Acesse a plataforma <a href="https://doc9.twygoead.com/users/login" target="_blank">https://doc9.twygoead.com/users/login</a> com seu e-mail de cadastro. Se esqueceu a senha, clique em "Esqueci minha senha".</p>
-        <p>Links dos treinamentos:</p>
-        <ul>
-            <li>Treinamento de Onboarding - <a href="#">Clique aqui</a></li>
-            <li>Preposto Trabalhista - <a href="#">Clique aqui</a></li>
-            <li>Advogados Trabalhistas - <a href="#">Clique aqui</a></li>
+            <li><a href="#">Android</a></li>
+            <li><a href="#">iPhone (iOS)</a></li>
         </ul>
 
-        <h2>📌 Como envio minha ata e relatório de audiência?</h2>
-        <p>Anexe a ata no sistema em até 24h após a audiência. O atraso gera multa de R$0,75. Procons e Tribunais têm orientações específicas.</p>
-        <p>Acesse: <a href="#">Formulário de Relatório</a></p>
+        <!-- aqui você insere as outras perguntas e respostas conforme já estruturamos antes -->
 
-        <h2>📌 Quando recebo meu pagamento?</h2>
-        <p>Todo dia X de cada mês. Audiências avulsas em até Y dias úteis após envio do relatório. Consulte tudo no extrato financeiro do sistema.</p>
-
-        <h2>📌 Esqueci minha senha do app, o que faço?</h2>
-        <p>Clique em "Esqueci minha senha" no app ou acesse: <a href="#">Redefinir Senha</a></p>
-
-        <h2>📌 Troca de audiencistas</h2>
-        <p>Alterações impactam o cliente e a distribuição de demandas. Trocas ou recusas fora do prazo aplicam multa (R$3,50 ou R$5,00) e podem levar a bloqueios e descadastro após reincidência.</p>
-
-        <h2>📌 Contato para financeiro</h2>
-        <p>Dúvidas sobre contrato, pagamentos ou problemas em audiência (até 1h antes) pelo WhatsApp (51) 3021-8888.</p>
-
-        <h2>📌 Não consigo fazer o check-in, e agora?</h2>
-        <p>Check-in abre 1h antes no app. Se tiver problemas, contate o suporte pelo WhatsApp imediatamente.</p>
-
-        <div class="links">
+        <div class="links" id="links">
             <h2>🔗 Links Úteis</h2>
             <ul>
                 <li><a href="#">📱 Baixar o app DOC9</a></li>
@@ -108,7 +128,7 @@
             </ul>
         </div>
 
-        <div class="tutoriais">
+        <div class="tutoriais" id="tutoriais">
             <h2>📹 Tutoriais Rápidos</h2>
             <ul>
                 <li>📽️ Como preencher relatório de audiência</li>
@@ -119,12 +139,19 @@
             </ul>
         </div>
 
+        <div class="contato" id="contato">
+            <h2>📞 Suporte</h2>
+            <p>Dúvidas? Fale com a gente:</p>
+            <div class="buttons">
+                <a href="https://wa.me/555130218888" target="_blank" class="btn">📱 WhatsApp</a>
+                <a href="mailto:suporte@doc9.com.br" class="btn">✉️ E-mail</a>
+            </div>
+        </div>
+
         <div class="footer">
             © 2025 DOC9 - Todos os direitos reservados.
         </div>
     </div>
+
 </body>
 </html>
-
-
-Criando landing page completa FAQ DOC9
